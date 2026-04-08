@@ -7,169 +7,236 @@
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../css/halamanDepan.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
   <body>
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top px-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold">GreenMarket</a>
+        <a href="" class="navbar-brand fw-bold">GreenMarket</a>
         <div class="ms-auto">
-          <a href="#" class="nav-link d-inline me-3 fw-bold">Beranda</a>
-          <a href="#" class="nav-link d-inline me-3 fw-bold">Jelajahi</a>
+          <a href="" class="nav-link d-inline me-3 fw-bold">Beranda</a>
+          <a href="" class="nav-link d-inline me-3 fw-bold">Jelajahi</a>
           <a href="login.html" class="nav-link d-inline fw-bold">Masuk</a>
           <span class="divider"> | </span>
-          <a href="register.html" class="nav-link d-inline fw-bold daftar"
-            >Daftar</a
-          >
+          <a href="register.html" class="nav-link d-inline fw-bold daftar">Daftar</a>
         </div>
       </div>
     </nav>
-
     <!-- HERO -->
     <section class="hero d-flex align-items-center">
       <div class="container-fluid content">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="fw-bold textfont">
-              Barang tak terpakai? Saatnya <br />
-              ubah jadi peluang emas.
+            <h1 class="fw-bold hero-title">
+              Barang tak terpakai? <br> Saatnya ubah jadi peluang emas.
             </h1>
-            <p class="textfont">
-              Dari barang tak terpakai, hadirkan peluang bisnins.
-            </p>
-            <button class="btn btn-light button">Jelajahi Barang →</button>
+            <p class="hero-subtitle"> Dari barang tak terpakai, hadirkan peluang bisnins.</p>
+            <button class="btn btn-jelajahi">Jelajahi Barang →</button>
           </div>
         </div>
       </div>
     </section>
-
     <!-- KATEGORI -->
-    <section class="kategori">
-      <div class="container-fluid">
-        <h3>
-          Temukan Barang <br />
-          Sesuai Kebutuhanmu!
-        </h3>
 
-        <div class="row g-3">
-          <div class="col-sm-6 custom-col">
-            <a href="#" class="card-link">
-              <div class="card-box">Elektronik</div>
-            </a>
-          </div>
+  <section class="kategori-section"> 
+    <div class="container-fluid">
+      <div class="kategori-header">
+        <span class="badge-kategori">Kategori Pilihan</span>
+        <h2 class="kategori-title">Telusuri berdasarkan kebutuhan</h2>
+      </div>
 
-          <div class="col-sm-6 custom-col">
-            <a href="#" class="card-link">
-              <div class="card-box">Fashion</div>
-            </a>
-          </div>
+      <div class="row g-4">
+        <!-- Kategori 1: Elektronik -->
+        <div class="col-sm-6 col-md-4 col-lg-2-4">
+          <a href="#" class="card-link">
+            <div class="card-kategori">  
+              <div class="icon-kategori">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h5 class="kategori-nama">Elektronik</h5>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-sm-6 custom-col">
-            <a href="#" class="card-link">
-              <div class="card-box">DIY</div>
-            </a>
-          </div>
+        <!-- Kategori 2: Fashion -->
+        <div class="col-sm-6 col-md-4 col-lg-2-4">
+          <a href="#" class="card-link">
+            <div class="card-kategori">  <!-- ← GANTI -->
+              <div class="icon-kategori">
+                <i class="bi bi-handbag"></i>
+              </div>
+              <h5 class="kategori-nama">Fashion</h5>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-sm-6 custom-col">
-            <a href="#" class="card-link">
-              <div class="card-box">Sepatu</div>
-            </a>
-          </div>
+        <!-- Kategori 3: DIY -->
+        <div class="col-sm-6 col-md-4 col-lg-2-4">
+          <a href="#" class="card-link">
+            <div class="card-kategori">  <!-- ← GANTI -->
+              <div class="icon-kategori">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h5 class="kategori-nama">DIY</h5>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-sm-6 custom-col">
-            <a href="#" class="card-link">
-              <div class="card-box">Aksesoris</div>
-            </a>
-          </div>
+        <!-- Kategori 4: Sepeda -->
+        <div class="col-sm-6 col-md-4 col-lg-2-4">
+          <a href="#" class="card-link">
+            <div class="card-kategori">  <!-- ← GANTI -->
+              <div class="icon-kategori">
+                <i class="bi bi-bicycle"></i>
+              </div>
+              <h5 class="kategori-nama">Sepeda</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Kategori 5: Aksesoris -->
+        <div class="col-sm-6 col-md-4 col-lg-2-4">
+          <a href="#" class="card-link">
+            <div class="card-kategori">  <!-- ← GANTI -->
+              <div class="icon-kategori">
+                <i class="bi bi-watch"></i>
+              </div>
+              <h5 class="kategori-nama">Aksesoris</h5>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+</section>
+     
+    
 
     <!-- INFO -->
-    <section class="info">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <!---Bagian Kiri-->
-          <div class="col-md-6">
-            <div class="join-box">
-              <h5>GreenJualan</h5>
-              <p>
-                "Barang dari mantan masih disimpan? <br />Buang kenangannya,
-                jual barangnya di Greenmarket.
-              </p>
-              <a href="" class="btn-join">Gabung Sekarang</a>
+  <section class="info-section">
+    <div class="container-fluid">
+      <div class="row g-5">
+        <!-- Card Kiri: GreenJualan -->
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-icon-bg">
+              <i class="bi bi-recycle"></i>
             </div>
+            <h5 class="info-badge">GreenJualan</h5>
+            <h1 class="info-title">Ubah barang lama Anda jadi berkah.</h1>
+            <p class="info-desc">
+              Daftarkan barang tak terpakai Anda dalam hitungan menit dan temukan 
+              pembeli yang peduli lingkungan.
+            </p>
+            <a href="#" class="btn-info">Gabung Sekarang →</a>
           </div>
-          <!---Bagian Kanan-->
-          <div class="col-md-6 text-end">
-            <div class="join-box">
-              <h5>GCommunity</h5>
-              <p>
-                Cuan dapat, teman pun dapat! Masuk ke komunitas Greenmarket dan
-                jadilah bagian dari ekosistem smart shopper yang hobi berbagi
-                peluang.
-              </p>
-              <a href="" class="btn-join">Gabung Sekarang</a>
+        </div>
+
+        <!-- Card Kanan: GCommunity -->
+        <div class="col-md-6">
+          <div class="info-card info-card-community">
+            <div class="info-icon-bg">
+              <i class="bi bi-people-fill"></i>
             </div>
+            <h5 class="info-badge">GCommunity</h5>
+            <h1 class="info-title">Komunitas peduli masa depan.</h1>
+            <p class="info-desc">
+              Diskusikan ide-ide berkelanjutan dan temukan tips mendaur ulang 
+              dari jutaan pengguna kami.
+            </p>
+            <a href="#" class="btn-info btn-info-dark">Gabung Sekarang →</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+      
 
     <!-- CTA -->
-    <section class="CTA">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-md-7">
-            <h3 class="cta-text">
-              Daftar sekarang untuk <br />
-              membantu mencintai bumi
-            </h3>
-          </div>
-          <div class="col-md-5 text-end">
-            <a class="btn btn-dark px-5 py-3 cta-button">SIGN UP FOR FREE →</a>
-          </div>
+  <section class="cta-section">
+    <div class="container-fluid">
+      <div class="cta-card">
+        <div class="cta-bg-effect"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Daftar sekarang untuk membantu mencintai bumi</h2>
+          <p class="cta-subtitle">
+            Mulai perjalanan konsumsi berkelanjutan Anda hari ini. 
+            Ribuan produk ramah lingkungan menunggu untuk ditemukan.
+          </p>
+          <a href="#" class="btn-cta">Mulai Sekarang Secara Gratis →</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+    
 
     <!-- FOOTER -->
-    <section class="footer">
-      <div class="container">
-        <div class="row footer-row justify-content-center">
-          <div class="col-md-4 footer-col text-center mb-4 mb-md-0">
-            <h6>Eksplorasi</h6>
-            <ul>
-              <li>Komunitas</li>
-              <li>Produk Terpopuler</li>
-              <li>Artikel & Blog</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 footer-col text-center mb-4 mb-md-0">
-            <h6>Keamanan & Privasi</h6>
-            <ul>
-              <li>Kebijakan Privasi</li>
-              <li>Syarat & Ketentuan</li>
-              <li>Hak Cipta</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 footer-col text-center">
-            <h6>Bantuan</h6>
-            <ul>
-              <li>Pusat Bantuan</li>
-              <li>Hubungi Kami</li>
-              <li>Laporkan Masalah</li>
-            </ul>
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row footer-row">
+        <!-- Kolom 1: Logo & Deskripsi -->
+        <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+          <div class="footer-brand">GreenMarket</div>
+          <p class="footer-desc">
+            Solusi ramah lingkungan untuk masa depan. Kami menghubungkan barang 
+            berkualitas dengan pemilik baru yang peduli akan bumi.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-      </div>
-    </section>
 
+        <!-- Kolom 2: Tautan Cepat -->
+        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+          <h6 class="footer-heading">Tautan Cepat</h6>
+          <ul class="footer-links">
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Kategori</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Dukungan -->
+        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+          <h6 class="footer-heading">Dukungan</h6>
+          <ul class="footer-links">
+            <li><a href="#">Hubungi Kami</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4: Berlangganan Newsletter -->
+        <div class="col-lg-4 col-md-12">
+          <h6 class="footer-heading">Berlangganan</h6>
+          <p class="footer-newsletter-text">
+            Dapatkan update terbaru tentang promo dan produk ramah lingkungan.
+          </p>
+          <form class="footer-form">
+            <div class="input-group">
+              <input type="email" class="footer-input" placeholder="Email Anda" />
+              <button type="submit" class="footer-btn">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+          </form>
+          <p class="footer-copyright">© 2026 GreenMarket. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
     <!-- Script -->
 
     <script>
