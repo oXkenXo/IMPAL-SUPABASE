@@ -4,6 +4,5 @@ com\greenmarket\backend\controller\AuthController.class
 com\greenmarket\backend\config\SupabaseConfig.class
 com\greenmarket\backend\repository\UserRepository.class
 com\greenmarket\backend\BackendApplication.class
-com\greenmarket\backend\repository\UserRepository$1.class
 com\greenmarket\backend\dto\RegisterRequest.class
 com\greenmarket\backend\model\User.class

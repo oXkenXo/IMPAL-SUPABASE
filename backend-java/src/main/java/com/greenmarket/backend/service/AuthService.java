@@ -30,10 +30,11 @@ public class AuthService {
         }
 
         User user = new User();
-        user.setNama_lengkap(request.getNama_lengkap());
+        // Ambil 'nama_lengkap' dari frontend/DTO dan set ke kolom 'nama'
+        user.setNama(request.getNama_lengkap()); 
         user.setEmail(request.getEmail());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
-        user.setRole("user");
+        user.setRole("user"); // Pastikan 'user' huruf kecil sesuai SQL
 
         userRepository.save(user);
 
@@ -43,22 +44,18 @@ public class AuthService {
 
     public ResponseEntity<Map<String, Object>> login(LoginRequest request) {
         Optional<User> optionalUser = userRepository.findByEmail(request.getEmail());
-        if (optionalUser.isEmpty()) {
+        
+        if (optionalUser.isEmpty() || !passwordEncoder.matches(request.getPassword(), optionalUser.get().getPassword())) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .body(Map.of("message", "Email atau password salah"));
         }
 
         User user = optionalUser.get();
-        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                    .body(Map.of("message", "Email atau password salah"));
-        }
-
         Map<String, Object> response = new HashMap<>();
         response.put("message", "Login berhasil");
         response.put("user", Map.of(
-                "id", user.getId(),
-                "nama_lengkap", user.getNama_lengkap(),
+                "id", user.getId_user(), // Gunakan id_user
+                "nama", user.getNama(),
                 "email", user.getEmail(),
                 "role", user.getRole()
         ));
