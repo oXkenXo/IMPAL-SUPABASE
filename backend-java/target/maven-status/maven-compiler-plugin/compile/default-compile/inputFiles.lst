@@ -1,0 +1,8 @@
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\config\SupabaseConfig.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\dto\LoginRequest.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\BackendApplication.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\dto\RegisterRequest.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\repository\UserRepository.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\controller\AuthController.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\model\User.java
+D:\Semester 4\IMPAL Supabase\greenmarket-website\backend-java\src\main\java\com\greenmarket\backend\service\AuthService.java
